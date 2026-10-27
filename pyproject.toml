@@ -1,0 +1,35 @@
+[project]
+name = "accessibility-repair-agent"
+version = "0.1.0"
+description = "Bounded HTML/CSS repairs accepted by independent browser evidence"
+requires-python = ">=3.12,<3.13"
+dependencies = ["fastapi", "uvicorn", "pydantic>=2", "langgraph", "openai", "jinja2", "beautifulsoup4", "tinycss2"]
+
+[dependency-groups]
+dev = ["pytest", "httpx", "ruff", "mypy", "types-beautifulsoup4"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["browser: real Chromium integration tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["tinycss2.*"]
+ignore_missing_imports = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/repair_agent"]

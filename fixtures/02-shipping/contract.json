@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "#street": "Street address"
+  },
+  "inputs": {
+    "#street": "12 Lake Road"
+  },
+  "actions": [],
+  "submit": "#submit",
+  "payload": {
+    "street": "12 Lake Road"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "labels": {
+    "#member": "Member name"
+  },
+  "inputs": {
+    "#member": "River"
+  },
+  "actions": [
+    "#invite"
+  ],
+  "submit": "#submit",
+  "payload": {
+    "member": "River"
+  }
+}

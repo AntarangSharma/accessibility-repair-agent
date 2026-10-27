@@ -1,0 +1,15 @@
+{
+  "labels": {
+    "#ref": "Booking reference"
+  },
+  "inputs": {
+    "#ref": "R-42"
+  },
+  "actions": [
+    "#desk"
+  ],
+  "submit": "#submit",
+  "payload": {
+    "reference": "R-42"
+  }
+}

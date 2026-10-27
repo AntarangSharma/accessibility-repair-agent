@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "#card": "Card number"
+  },
+  "inputs": {
+    "#card": "A-123"
+  },
+  "actions": [],
+  "submit": "#submit",
+  "payload": {
+    "card": "A-123"
+  }
+}

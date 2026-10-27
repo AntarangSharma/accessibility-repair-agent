@@ -1,0 +1,13 @@
+{
+  "labels": {},
+  "inputs": {
+    "#one": "A",
+    "#two": "B"
+  },
+  "actions": [],
+  "submit": "#submit",
+  "payload": {
+    "one": "A",
+    "two": "B"
+  }
+}

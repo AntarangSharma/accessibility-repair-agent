@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "#email": "Email address"
+  },
+  "inputs": {
+    "#email": "river@example.com"
+  },
+  "actions": [],
+  "submit": "#submit",
+  "payload": {
+    "email": "river@example.com"
+  }
+}

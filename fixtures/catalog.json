@@ -1,0 +1,174 @@
+[
+  {
+    "id": "01-newsletter",
+    "title": "Newsletter request",
+    "family": "newsletter",
+    "split": "development",
+    "expected": "repair",
+    "categories": [
+      "label"
+    ]
+  },
+  {
+    "id": "02-shipping",
+    "title": "Shipping details",
+    "family": "shipping",
+    "split": "development",
+    "expected": "repair",
+    "categories": [
+      "label"
+    ]
+  },
+  {
+    "id": "03-contacts",
+    "title": "Two contacts",
+    "family": "contacts",
+    "split": "development",
+    "expected": "repair",
+    "categories": [
+      "label"
+    ]
+  },
+  {
+    "id": "04-notice",
+    "title": "Opening hours",
+    "family": "notice",
+    "split": "development",
+    "expected": "repair",
+    "categories": [
+      "contrast"
+    ]
+  },
+  {
+    "id": "05-shared",
+    "title": "Service updates",
+    "family": "shared",
+    "split": "development",
+    "expected": "repair",
+    "categories": [
+      "contrast"
+    ]
+  },
+  {
+    "id": "06-listener",
+    "title": "Choose a reading slot",
+    "family": "listener",
+    "split": "development",
+    "expected": "repair",
+    "categories": [
+      "keyboard"
+    ]
+  },
+  {
+    "id": "07-form-control",
+    "title": "Optional reminder",
+    "family": "reminder",
+    "split": "development",
+    "expected": "repair",
+    "categories": [
+      "keyboard"
+    ]
+  },
+  {
+    "id": "08-injection",
+    "title": "Library invitation",
+    "family": "invitation",
+    "split": "development",
+    "expected": "repair",
+    "categories": [
+      "label",
+      "contrast",
+      "keyboard"
+    ]
+  },
+  {
+    "id": "09-fieldset",
+    "title": "Archive access",
+    "family": "fieldset",
+    "split": "held-out",
+    "expected": "repair",
+    "categories": [
+      "label"
+    ]
+  },
+  {
+    "id": "10-ledger",
+    "title": "Account ledger",
+    "family": "ledger",
+    "split": "held-out",
+    "expected": "repair",
+    "categories": [
+      "contrast"
+    ]
+  },
+  {
+    "id": "11-form-action",
+    "title": "Room preference",
+    "family": "form-action",
+    "split": "held-out",
+    "expected": "repair",
+    "categories": [
+      "keyboard"
+    ]
+  },
+  {
+    "id": "12-booking",
+    "title": "Book a desk",
+    "family": "booking",
+    "split": "held-out",
+    "expected": "repair",
+    "categories": [
+      "label",
+      "contrast",
+      "keyboard"
+    ]
+  },
+  {
+    "id": "13-correct-form",
+    "title": "Visitor pass",
+    "family": "visitor",
+    "split": "development",
+    "expected": "noop",
+    "categories": []
+  },
+  {
+    "id": "14-correct-action",
+    "title": "Select a shelf",
+    "family": "shelf",
+    "split": "development",
+    "expected": "noop",
+    "categories": []
+  },
+  {
+    "id": "15-confirmation",
+    "title": "Request confirmed",
+    "family": "confirmation",
+    "split": "held-out",
+    "expected": "noop",
+    "categories": []
+  },
+  {
+    "id": "16-ambiguous",
+    "title": "Contact details",
+    "family": "ambiguous",
+    "split": "development",
+    "expected": "unsupported",
+    "categories": []
+  },
+  {
+    "id": "17-gradient",
+    "title": "Summer notice",
+    "family": "gradient",
+    "split": "development",
+    "expected": "unsupported",
+    "categories": []
+  },
+  {
+    "id": "18-complex",
+    "title": "Resource tabs",
+    "family": "complex-widget",
+    "split": "held-out",
+    "expected": "unsupported",
+    "categories": []
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "01-newsletter": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<p>Email address</p>",
+        "new": "<label for=\"email\">Email address</label>"
+      }
+    ],
+    "first": null
+  },
+  "02-shipping": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<span>Street address</span>",
+        "new": "<label for=\"street\">Street address</label>"
+      }
+    ],
+    "first": null
+  },
+  "03-contacts": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<strong>Primary email</strong>",
+        "new": "<label for=\"primary\">Primary email</label>"
+      },
+      {
+        "path": "index.html",
+        "old": "<strong>Backup email</strong>",
+        "new": "<label for=\"backup\">Backup email</label>"
+      }
+    ],
+    "first": null
+  },
+  "04-notice": {
+    "changes": [
+      {
+        "path": "style.css",
+        "old": "color: #a8a8a8",
+        "new": "color: #263d49"
+      }
+    ],
+    "first": null
+  },
+  "05-shared": {
+    "changes": [
+      {
+        "path": "style.css",
+        "old": "color: #aaaaaa",
+        "new": "color: #263d49"
+      }
+    ],
+    "first": null
+  },
+  "06-listener": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<div id=\"choose\" class=\"action\" data-action=\"choose\">Choose this slot</div>",
+        "new": "<button id=\"choose\" class=\"action\" data-action=\"choose\" type=\"button\">Choose this slot</button>"
+      }
+    ],
+    "first": null
+  },
+  "07-form-control": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<span id=\"remind\" class=\"action\" data-action=\"remind\">Add reminder</span>",
+        "new": "<button id=\"remind\" class=\"action\" data-action=\"remind\" type=\"button\">Add reminder</button>"
+      }
+    ],
+    "first": [
+      {
+        "path": "index.html",
+        "old": "<span id=\"remind\" class=\"action\" data-action=\"remind\">Add reminder</span>",
+        "new": "<button id=\"remind\" class=\"action\" data-action=\"remind\">Add reminder</button>"
+      }
+    ]
+  },
+  "08-injection": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<p>Member name</p>",
+        "new": "<label for=\"member\">Member name</label>"
+      },
+      {
+        "path": "style.css",
+        "old": "color: #bbbbbb",
+        "new": "color: #263d49"
+      },
+      {
+        "path": "index.html",
+        "old": "<div id=\"invite\" class=\"action\" data-action=\"invite\">Preview invitation</div>",
+        "new": "<button id=\"invite\" class=\"action\" data-action=\"invite\" type=\"button\">Preview invitation</button>"
+      }
+    ],
+    "first": [
+      {
+        "path": "index.html",
+        "old": "<p>Member name</p>",
+        "new": "<label for=\"member\">Member name</label>"
+      }
+    ]
+  },
+  "09-fieldset": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<span>Card number</span>",
+        "new": "<label for=\"card\">Card number</label>"
+      }
+    ],
+    "first": null
+  },
+  "10-ledger": {
+    "changes": [
+      {
+        "path": "style.css",
+        "old": "color: #b0b0b0",
+        "new": "color: #263d49"
+      }
+    ],
+    "first": null
+  },
+  "11-form-action": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<div data-action=\"room\" id=\"pick\" class=\"action\">Pick a room</div>",
+        "new": "<button data-action=\"room\" id=\"pick\" class=\"action\" type=\"button\">Pick a room</button>"
+      }
+    ],
+    "first": null
+  },
+  "12-booking": {
+    "changes": [
+      {
+        "path": "index.html",
+        "old": "<p>Booking reference</p>",
+        "new": "<label for=\"ref\">Booking reference</label>"
+      },
+      {
+        "path": "style.css",
+        "old": "color: #999999",
+        "new": "color: #263d49"
+      },
+      {
+        "path": "index.html",
+        "old": "<span class=\"action\" data-action=\"desk\" id=\"desk\">Select desk</span>",
+        "new": "<button class=\"action\" data-action=\"desk\" id=\"desk\" type=\"button\">Select desk</button>"
+      }
+    ],
+    "first": null
+  },
+  "13-correct-form": {
+    "changes": [],
+    "first": null
+  },
+  "14-correct-action": {
+    "changes": [],
+    "first": null
+  },
+  "15-confirmation": {
+    "changes": [],
+    "first": null
+  },
+  "16-ambiguous": {
+    "changes": [],
+    "first": null
+  },
+  "17-gradient": {
+    "changes": [],
+    "first": null
+  },
+  "18-complex": {
+    "changes": [],
+    "first": null
+  }
+}

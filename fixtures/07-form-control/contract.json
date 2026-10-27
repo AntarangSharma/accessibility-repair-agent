@@ -1,0 +1,15 @@
+{
+  "labels": {
+    "#name": "Your name"
+  },
+  "inputs": {
+    "#name": "River"
+  },
+  "actions": [
+    "#remind"
+  ],
+  "submit": "#submit",
+  "payload": {
+    "name": "River"
+  }
+}

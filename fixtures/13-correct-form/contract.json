@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "#visitor": "Visitor name"
+  },
+  "inputs": {
+    "#visitor": "River"
+  },
+  "actions": [],
+  "submit": "#submit",
+  "payload": {
+    "visitor": "River"
+  }
+}

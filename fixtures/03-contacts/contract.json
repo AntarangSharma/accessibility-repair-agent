@@ -1,0 +1,16 @@
+{
+  "labels": {
+    "#primary": "Primary email",
+    "#backup": "Backup email"
+  },
+  "inputs": {
+    "#primary": "a@example.com",
+    "#backup": "b@example.com"
+  },
+  "actions": [],
+  "submit": "#submit",
+  "payload": {
+    "primary": "a@example.com",
+    "backup": "b@example.com"
+  }
+}

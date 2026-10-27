@@ -1,0 +1,15 @@
+{
+  "labels": {
+    "#room": "Room name"
+  },
+  "inputs": {
+    "#room": "Quiet"
+  },
+  "actions": [
+    "#pick"
+  ],
+  "submit": "#submit",
+  "payload": {
+    "room": "Quiet"
+  }
+}
