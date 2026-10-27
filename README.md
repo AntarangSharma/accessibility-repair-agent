@@ -97,7 +97,7 @@ Restart recovery discards unverified active work while retaining review evidence
 
 ## Measured results
 
-The committed [scripted report](reports/scripted.json) contains actual Chromium/axe
+The [measured results](docs/results.md) and committed [scripted report](reports/scripted.json) contains actual Chromium/axe
 results, hashes, timing, usage and every rejected attempt for all **36 runs**: two
 approaches on 18 pages. Six template families were reserved before repair logic was
 built. Development and reserved results are separate below.

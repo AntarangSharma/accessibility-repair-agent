@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "recorded_at": "2026-10-27T04:31:26.810002+00:00",
+  "scope": "local deterministic verification",
+  "runtimes": {
+    "python": "3.12.13",
+    "node": "22.22.2",
+    "uv": "0.11.9",
+    "playwright": "1.64.1",
+    "axe_playwright": "4.14.0"
+  },
+  "locks": {
+    "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
+    "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
+  },
+  "commands": [
+    {
+      "command": "make setup",
+      "context": "clean temporary checkout with isolated Chromium",
+      "result": "passed"
+    },
+    {
+      "command": "make check",
+      "context": "main and clean temporary checkouts",
+      "result": "passed"
+    },
+    {
+      "command": "make test",
+      "context": "main checkout: 40 tests and real UI journey",
+      "result": "passed"
+    },
+    {
+      "command": "make test",
+      "context": "clean temporary checkout: 40 tests and real UI journey",
+      "result": "passed"
+    },
+    {
+      "command": "make eval-fixtures",
+      "context": "36 actual browser runs, both approaches on 18 pages",
+      "result": "passed"
+    },
+    {
+      "command": "make smoke-live",
+      "context": "no API credentials; exit 2; zero API calls",
+      "result": "pending"
+    },
+    {
+      "command": "make eval-live",
+      "context": "no API credentials; exit 2; zero API calls",
+      "result": "pending"
+    },
+    {
+      "command": "make docker-smoke",
+      "context": "image build, 40 tests and real UI journey inside container",
+      "result": "passed"
+    }
+  ],
+  "visible_browser_inspection": {
+    "result": "passed",
+    "fixture": "01-newsletter",
+    "decision": "accepted",
+    "form_payload": "passed"
+  },
+  "live_quality": "unmeasured",
+  "automated_compliance_claim": false
+}
