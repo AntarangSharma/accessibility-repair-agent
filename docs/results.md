@@ -13,7 +13,7 @@ starts with a clean copy and uses the same deterministic acceptance function.
 | Reserved families | Agent | 4/4 | 4 | 0 | 0 | 0/1 | 1/1 | 26.001 | 3.595 | 0 |
 
 Single-shot verifies 10/12 supported pages in 12 attempts. The bounded agent verifies
-12/12 in 14 attempts. All 24 accepted candidates across the two approaches preserve
+12/12 in 14 attempts. All 22 accepted candidates across the two approaches preserve
 specified behavior. Each approach leaves all three correct pages unchanged and
 abstains on all three unsupported pages. No API tokens were used; estimated API
 spend is $0. The measured times are host-dependent and include inspection and
