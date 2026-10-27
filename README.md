@@ -46,7 +46,8 @@ unexpectedly. The revised candidate is accepted:
 
 The existing ID, class, data attribute and click listener remain intact. Enter and Space
 each activate it once without submitting the form. An independent submission test still
-receives `{"name": "River"}`. The interface lets you open both attempts and inspect the
+receives `{"name": "River"}`. Pointer and keyboard action tests also assert that
+entered form values survive activation, catching accidental reset buttons. The interface lets you open both attempts and inspect the
 actual checks. `01-newsletter` provides a smaller label-repair example.
 
 ## Supported scope

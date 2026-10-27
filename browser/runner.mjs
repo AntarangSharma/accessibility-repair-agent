@@ -241,20 +241,36 @@ try {
   const assert = (condition, message) => {
     if (!condition) throw Error(message);
   };
+  const fillInputs = async (p) => {
+    for (const [selector, value] of Object.entries(contract.inputs)) {
+      await p.locator(selector).fill(value);
+    }
+  };
+  const assertInputsPreserved = async (p) => {
+    for (const [selector, value] of Object.entries(contract.inputs)) {
+      assert(
+        (await p.locator(selector).inputValue()) === value,
+        "Action changed a filled form value",
+      );
+    }
+  };
   for (const selector of contract.actions) {
     await check(behavior, `click:${selector}`, async (p) => {
+      await fillInputs(p);
       const target = p.locator(selector);
       assert(
         (await target.isVisible()) && (await target.isEnabled()),
         "Control missing, hidden, or disabled",
       );
       await target.click();
+      await assertInputsPreserved(p);
       const state = await p.evaluate(() => window.fixtureState);
       assert(state.clicks === 1, "Click listener effect changed");
       assert(state.submissions === 0, "Action submitted the form unexpectedly");
     });
     for (const key of ["Enter", "Space"]) {
       await check(keyboard, `${key}:${selector}`, async (p) => {
+        await fillInputs(p);
         let reached = false;
         for (let i = 0; i < 30; i += 1) {
           await p.keyboard.press("Tab");
@@ -269,6 +285,7 @@ try {
         }
         assert(reached, "Control is absent from the Tab order");
         await p.keyboard.press(key);
+        await assertInputsPreserved(p);
         const state = await p.evaluate(() => window.fixtureState);
         assert(
           state.clicks === 1,

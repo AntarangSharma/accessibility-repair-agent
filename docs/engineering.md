@@ -60,7 +60,9 @@ The Node runner reads immutable behavior contracts itself from the repository. I
 not accept test code or assertions from the model. It records a full scoped WCAG-tagged
 axe scan and a separate label/color-contrast scan, including incomplete results. Explicit
 Tab, Enter and Space tests check action activation exactly once without accidental form
-submission. Pointer clicks independently check the listener effect. Forms are filled
+submission. Pointer clicks independently check the listener effect. Action tests fill the form first
+and assert that pointer, Enter and Space activation preserve its entered values,
+rejecting accidental reset semantics as well as accidental submission. Forms are filled
 and submitted against an exact expected payload written independently of candidate HTML.
 Accessible-name assertions compare against the independently authored contract.
 

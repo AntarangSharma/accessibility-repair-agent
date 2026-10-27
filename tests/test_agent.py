@@ -226,3 +226,32 @@ def test_call_limit_discards_pending_candidate(
 def test_invalid_price_cannot_bypass_spend_limit(rate: float) -> None:
     with pytest.raises(ValueError):
         Limits(input_rate=rate)
+
+
+@pytest.mark.browser
+def test_native_reset_cannot_clear_form_values(tmp_path: Path) -> None:
+    fid = "07-form-control"
+    original = fixture_path(fid)
+    before = inspect(fid, original, tmp_path / "reset-before.png")
+    candidate = tmp_path / "candidate"
+    shutil.copytree(original, candidate)
+    apply_patch(
+        candidate,
+        Patch(
+            base_hash=content_hash(candidate),
+            replacements=[
+                Replacement(
+                    path="index.html",
+                    old='<span id="remind" class="action" data-action="remind">Add reminder</span>',
+                    new=(
+                        '<button id="remind" class="action" data-action="remind" type="reset">'
+                        "Add reminder</button>"
+                    ),
+                )
+            ],
+        ),
+    )
+    after = inspect(fid, candidate, tmp_path / "reset-after.png")
+    assert not after["behavior"][0]["pass"]
+    assert "filled form value" in after["behavior"][0]["observation"]
+    assert not decide(before, after)[0]
