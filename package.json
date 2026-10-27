@@ -3,8 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": {"node": ">=22.12 <23"},
-  "scripts": {"format": "prettier --write browser/*.mjs src/repair_agent/static/* src/repair_agent/templates/*", "check": "prettier --check browser/*.mjs src/repair_agent/static/* src/repair_agent/templates/*"},
-  "dependencies": {"@axe-core/playwright": "4.14.0", "playwright": "1.64.1"},
-  "devDependencies": {"prettier": "3.6.2"}
+  "engines": {
+    "node": ">=22.12 <23"
+  },
+  "scripts": {
+    "format": "prettier --write browser/*.mjs src/repair_agent/static/*",
+    "check": "prettier --check browser/*.mjs src/repair_agent/static/*"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "playwright": "1.64.1"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
 }

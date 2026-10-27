@@ -2,11 +2,12 @@
 
 import json
 import os
+import signal
 import subprocess
 from pathlib import Path
 from typing import Any
 
-from repair_agent.schema import ROOT, clean_text
+from repair_agent.schema import ROOT, BrowserResult, clean_text
 
 
 class BrowserError(RuntimeError):
@@ -14,25 +15,41 @@ class BrowserError(RuntimeError):
 
 
 def inspect(fixture: str, root: Path, screenshot: Path, timeout: float = 60) -> dict[str, Any]:
-    payload = {'version': 1, 'fixture': fixture, 'root': str(root.resolve()),
-               'screenshot': str(screenshot.resolve())}
+    payload = {
+        "version": 1,
+        "fixture": fixture,
+        "root": str(root.resolve()),
+        "screenshot": str(screenshot.resolve()),
+    }
     # Never inherit model credentials into the fixture/browser process.
-    env = {key: value for key, value in os.environ.items()
-           if key in {'PATH', 'HOME', 'TMPDIR', 'PLAYWRIGHT_BROWSERS_PATH', 'SYSTEMROOT'}}
+    env = {
+        key: value
+        for key, value in os.environ.items()
+        if key in {"PATH", "HOME", "TMPDIR", "PLAYWRIGHT_BROWSERS_PATH", "SYSTEMROOT"}
+    }
+    process = subprocess.Popen(
+        ["node", str(ROOT / "browser/runner.mjs")],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        env=env,
+        start_new_session=True,
+    )
     try:
-        result = subprocess.run(
-            ['node', str(ROOT / 'browser/runner.mjs')], input=json.dumps(payload),
-            text=True, capture_output=True, timeout=max(0.1, timeout), check=False, env=env,
-        )
+        stdout, stderr = process.communicate(json.dumps(payload), timeout=max(0.1, timeout))
     except subprocess.TimeoutExpired as error:
-        raise BrowserError('Browser verification timed out') from error
-    if result.returncode:
-        raise BrowserError('Browser runner failed: ' + str(clean_text(result.stderr[-900:])))
+        # Kill the whole session, including Chromium, before returning a rejected result.
+        os.killpg(process.pid, signal.SIGKILL)
+        process.communicate()
+        raise BrowserError("Browser verification timed out") from error
+    if process.returncode:
+        raise BrowserError("Browser runner failed: " + str(clean_text(stderr[-900:])))
     try:
-        data = json.loads(result.stdout)
-        if data['version'] != 1 or not all(key in data for key in
-                ('axe', 'behavior', 'keyboard', 'controls', 'labels', 'unsupported')):
-            raise ValueError('Invalid runner result')
-        return dict(clean_text(data))
+        data = BrowserResult.model_validate_json(stdout)
+        for field in ("violations", "targeted", "incomplete", "targetedIncomplete"):
+            if field not in data.axe:
+                raise ValueError("Missing axe result group")
+        return dict(clean_text(data.model_dump(by_alias=True)))
     except (ValueError, KeyError, TypeError) as error:
-        raise BrowserError('Invalid browser v1 response') from error
+        raise BrowserError("Invalid browser v1 response") from error

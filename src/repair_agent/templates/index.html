@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="csrf-token" content="{{ csrf }}" />
+        <title>Accessibility Repair Agent</title>
+        <link rel="stylesheet" href="/static/style.css" />
+        <script src="/static/app.js" defer></script>
+    </head>
+    <body {% if run and run.status not in terminal %}data-poll="{{ run.id }}" {% endif %}>
+        <a class="skip" href="#evidence">Skip to repair evidence</a>
+        <header>
+            <div>
+                <p class="eyebrow">LOCAL REPAIR WORKBENCH</p>
+                <h1>Accessibility Repair Agent</h1>
+                <p>
+                    Small changes. Independent browser evidence. A decision you can
+                    inspect.
+                </p>
+            </div>
+            <span class="scope">HTML + CSS · bundled fixtures</span>
+        </header>
+        <main>
+            <section class="launch" aria-labelledby="launch-title">
+                <h2 id="launch-title">Start a review</h2>
+                <form id="run-form">
+                    <div class="field wide">
+                        <label for="fixture">Bundled page</label><select id="fixture" name="fixture">
+                            {% for fixture in fixtures %}
+                                <option value="{{ fixture.id }}"
+                                        {% if run and run.fixture == fixture.id %}selected{% endif %}>
+                                    {{ fixture.id }} · {{ fixture.title }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="mode">Model mode</label><select id="mode" name="mode">
+                            <option value="scripted">Scripted demo (no key)</option>
+                            <option value="live" {% if not live_ready %}disabled{% endif %}>
+                                Live OpenAI{% if not live_ready %} (key unavailable){% endif %}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="approach">Approach</label><select id="approach" name="approach">
+                            <option value="agent">Verify and revise</option>
+                            <option value="single-shot">Single shot</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="run-button">Scan and repair</button>
+                </form>
+                <p id="form-message" role="status">
+                    Scripted mode exercises the real browser pipeline using bundled
+                    responses. It does not measure AI repair quality.
+                </p>
+            </section>
+            <div class="workspace">
+                <aside class="history" aria-labelledby="history-title">
+                    <h2 id="history-title">Recent runs</h2>
+                    {% for item in runs %}<a class="run-link {% if run and run.id == item.id %}current{% endif %}"
+   href="/runs/{{ item.id }}"><strong>{{ item.fixture }}</strong><span>{{ item.status }} · {{ item.mode }}</span></a>{% else %}
+                    <p>No runs yet. Choose a bundled page to collect evidence.</p>
+                {% endfor %}
+            </aside>
+            <section id="evidence" class="evidence" aria-labelledby="evidence-title">
+                {% if run %}
+                    <div class="decision">
+                        <div>
+                            <p class="eyebrow">
+                                {{ run.fixture }} · {{ run.approach }} · {{
+                                    run.mode }}
+                            </p>
+                            <h2 id="evidence-title">Repair evidence</h2>
+                        </div>
+                        <span class="badge {{ run.status }}" id="run-status">{{ run.status }}</span>
+                    </div>
+                    <p class="reason" role="status">
+                        {{ run.reason or 'Collecting browser evidence and testing a
+                            candidate. No repair has been accepted.' }}
+                    </p>
+                    <p class="run-meta">
+                        {{ run.model }} · {{ run.attempts|length }} candidate(s)
+                        · {{ run.calls }} model call(s) · {{ run.latency_seconds|default(0)|round(1) }} s · {{
+                            run.input_tokens + run.output_tokens }} tokens
+                    </p>
+                    {% if run.attempts %}
+                        <nav class="attempts" aria-label="Candidate attempts">
+                            {% for item in run.attempts %}<a href="?attempt={{ item.number }}"
+   {% if selected and selected.number == item.number %}aria-current="page" {% endif %}>Candidate {{ item.number }}: {{ item.decision }}</a>{% endfor %}
+                        </nav>
+                    {% endif %}
+                    <div class="screenshots">
+                        <figure>
+                            <figcaption>
+                                Original <span>Pristine starting page</span>
+                            </figcaption>
+                            {% if run.baseline %}
+                                <img src="/runs/{{ run.id }}/image/original.png"
+                                     alt="Original bundled page before any repair" />
+                            {% else %}
+                                <div class="placeholder">Original screenshot is being collected.</div>
+                            {% endif %}
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                Candidate {% if selected %}{{ selected.number }}{% endif %}<span>{% if selected %}{{ selected.decision }}{% else %}Awaiting a
+                                proposal{% endif %}</span>
+                        </figcaption>
+                        {% if selected and selected.result %}
+                            <img src="/runs/{{ run.id }}/image/candidate-{{ selected.number }}.png"
+                                 alt="Candidate page captured before functional and keyboard tests" />
+                        {% else %}
+                            <div class="placeholder">
+                                {% if run.status == "noop" %}No changes needed.{% elif
+                                    run.status == "unsupported" %}Manual review required. No
+                                    candidate applied.{% elif run.status == "failed" %}The run
+                                    failed. See the recorded reason.{% else %}Candidate evidence
+                                    will appear after verification.{% endif %}
+                            </div>
+                        {% endif %}
+                    </figure>
+                </div>
+                <p class="caption">
+                    Screenshots support inspection. They do not prove accessibility or
+                    WCAG compliance.
+                </p>
+                {% if selected %}
+                    <section class="panel">
+                        <h3>Candidate decision</h3>
+                        <p>
+                            <strong>{{ selected.decision }}</strong>: {{ selected.reason or
+                            'Verification pending' }}
+                        </p>
+                        <h3>Exact source diff</h3>
+                        <pre class="diff" tabindex="0" aria-label="HTML and CSS changes">{% for line in selected.diff.splitlines() %}<span class="{% if line.startswith('+') %}addition{% elif line.startswith('-') %}deletion{% endif %}">{{ line }}
+</span>{% else %}No validated diff available.{% endfor %}</pre>
+                    </section>
+                {% endif %}
+                {% if run.baseline %}
+                    <div class="results">
+                        {% for label, scan in [('Original', run.baseline), ('Candidate',
+                            selected.result if selected else none)] %}
+                            <section class="panel">
+                                <h3>{{ label }} checks</h3>
+                                {% if scan %}
+                                    <p class="metric">{{ issues(scan) }} targeted failure(s)</p>
+                                    {% for category in ['behavior','keyboard','labels'] %}
+                                        <h4>{{ category|capitalize }}</h4>
+                                        <ul class="checks">
+                                            {% for check in scan[category] %}
+                                                <li>
+                                                    <span class="check-result {{ 'pass' if check.pass else 'fail' }}">{{ 'PASS' if check.pass else 'FAIL' }}</span><code>{{ check.id }}</code><small>{{ check.observation }}</small>
+                                                </li>
+                                            {% else %}
+                                                <li class="muted">No {{ category }} assertions for this page.</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endfor %}
+                                    <h4>Scoped axe findings</h4>
+                                    {% for finding in scan.axe.violations %}
+                                        <details open>
+                                            <summary>{{ finding.id }} · {{ finding.nodes|length }} node(s)</summary>
+                                            <p>{{ finding.description }}</p>
+                                            {% for node in finding.nodes %}<code>{{ node.target|join(", ") }}</code>
+                                                <p>{{ node.summary }}</p>
+                                            {% endfor %}
+                                        </details>
+                                    {% else %}
+                                        <p>No violations detected in the scoped scan.</p>
+                                    {% endfor %}
+                                    <h4>Incomplete / manual review</h4>
+                                    {% for finding in scan.axe.incomplete %}
+                                        <p>
+                                            {{ finding.id }}: {{ finding.nodes|length }} node(s) require
+                                            review.
+                                        </p>
+                                    {% else %}
+                                        <p>No incomplete scoped results.</p>
+                                    {% endfor %}
+                                    {% for reason in scan.unsupported %}
+                                        <p class="unsupported-note">{{ reason }}</p>
+                                    {% endfor %}
+                                {% else %}
+                                    <p class="muted">No candidate verification results yet.</p>
+                                {% endif %}
+                            </section>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <details class="panel trace">
+                    <summary>Decision and tool trace</summary>
+                    <ol>
+                        {% for entry in run.trace %}
+                            <li>
+                                <strong>{{ entry.tool }}</strong>
+                                <p>{{ entry.decision }}</p>
+                                {% if entry.observation %}<small>{{ entry.observation }}</small>{% endif %}
+                            </li>
+                        {% else %}
+                            <li>Preflight inspection only. No model decisions recorded.</li>
+                        {% endfor %}
+                    </ol>
+                </details>
+                <p>
+                    <a href="/runs/{{ run.id }}/manifest">Download run manifest</a>
+                    <span class="muted">Includes hashes, actual checks, rejected attempts, limits and
+                    usage.</span>
+                </p>
+            {% else %}
+                <div class="empty">
+                    <p class="eyebrow">EVIDENCE BEFORE ACCEPTANCE</p>
+                    <h2 id="evidence-title">Review the change, then trust the checks.</h2>
+                    <p>
+                        Select a bundled page to compare the original with a verified
+                        candidate. The workbench records failed attempts and preserves the
+                        original.
+                    </p>
+                    <div class="scope-grid">
+                        <div>
+                            <strong>01</strong>
+                            <h3>Form labels</h3>
+                            <p>Connect clear surrounding text to its input.</p>
+                        </div>
+                        <div>
+                            <strong>02</strong>
+                            <h3>Solid contrast</h3>
+                            <p>Repair text colors on a solid background.</p>
+                        </div>
+                        <div>
+                            <strong>03</strong>
+                            <h3>Keyboard controls</h3>
+                            <p>Preserve clicks and test Enter and Space.</p>
+                        </div>
+                    </div>
+                    <p class="muted">
+                        Ambiguous labels, gradients and complex widgets require manual
+                        review.
+                    </p>
+                </div>
+            {% endif %}
+        </section>
+    </div>
+</main>
+<footer>
+    Local fixture laboratory. Automated checks cover a limited scope; manual
+    accessibility assessment remains necessary.
+</footer>
+</body>
+</html>
