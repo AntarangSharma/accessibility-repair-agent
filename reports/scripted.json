@@ -1,19 +1,19 @@
 {
   "version": 1,
   "mode": "scripted",
-  "at": "2026-10-27T04:26:58.067810+00:00",
+  "at": "2026-10-27T04:33:59.334848+00:00",
   "status": "completed",
   "budget_usd": 3.0,
   "runs": [
     {
       "version": 1,
-      "id": "d214afeea2e84a69b5b1c1f39425aa2a",
+      "id": "03e6bfea894d4b75821103d9095de039",
       "fixture": "01-newsletter",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:26:58.068185+00:00",
+      "created_at": "2026-10-27T04:33:59.335292+00:00",
       "attempts": [
         {
           "number": 1,
@@ -125,7 +125,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:00.307947+00:00"
+          "at": "2026-10-27T04:34:01.222377+00:00"
         }
       ],
       "calls": 1,
@@ -266,7 +266,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -281,7 +281,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:02.251381+00:00",
+      "updated_at": "2026-10-27T04:34:03.137093+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -292,21 +292,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 4.179,
+      "latency_seconds": 3.799,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "a226fe5bac1b100e19e52e73d46dd61da8b240013c696d2e62181ae5e9430994",
-      "completed_at": "2026-10-27T04:27:02.251363+00:00"
+      "completed_at": "2026-10-27T04:34:03.137076+00:00"
     },
     {
       "version": 1,
-      "id": "1a9b9b49b88c46aa82d1067e63d95c95",
+      "id": "be45d9b826ef4bed9464493dab01b2e6",
       "fixture": "01-newsletter",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:02.254413+00:00",
+      "created_at": "2026-10-27T04:34:03.139875+00:00",
       "attempts": [
         {
           "number": 1,
@@ -418,24 +418,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:27:04.146925+00:00",
+          "at": "2026-10-27T04:34:05.049621+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:27:04.151384+00:00",
+          "at": "2026-10-27T04:34:05.054320+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:04.155549+00:00"
+          "at": "2026-10-27T04:34:05.058454+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:27:04.164281+00:00"
+          "at": "2026-10-27T04:34:05.067499+00:00"
         }
       ],
       "calls": 4,
@@ -576,7 +576,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -591,7 +591,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:06.070432+00:00",
+      "updated_at": "2026-10-27T04:34:06.955370+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -602,21 +602,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.813,
+      "latency_seconds": 3.812,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "a226fe5bac1b100e19e52e73d46dd61da8b240013c696d2e62181ae5e9430994",
-      "completed_at": "2026-10-27T04:27:06.070409+00:00"
+      "completed_at": "2026-10-27T04:34:06.955351+00:00"
     },
     {
       "version": 1,
-      "id": "c6e40f34a4e34ee78d7521f1a43cf3b2",
+      "id": "569f51df9eaa4f9793c312053ea96f02",
       "fixture": "02-shipping",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:06.078543+00:00",
+      "created_at": "2026-10-27T04:34:06.958641+00:00",
       "attempts": [
         {
           "number": 1,
@@ -728,7 +728,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:08.061182+00:00"
+          "at": "2026-10-27T04:34:08.827099+00:00"
         }
       ],
       "calls": 1,
@@ -869,7 +869,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -884,7 +884,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:09.909336+00:00",
+      "updated_at": "2026-10-27T04:34:10.716061+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -895,21 +895,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.811,
+      "latency_seconds": 3.754,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "06c24fe6eb65afd5263b63a663d8bdcbbacc2304c3a8c95532d9d215cee0824c",
-      "completed_at": "2026-10-27T04:27:09.909316+00:00"
+      "completed_at": "2026-10-27T04:34:10.716043+00:00"
     },
     {
       "version": 1,
-      "id": "c866a0f75e8941a6b826209131d1aa09",
+      "id": "c12dac60f23149b5a0ba395e6c279165",
       "fixture": "02-shipping",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:09.912592+00:00",
+      "created_at": "2026-10-27T04:34:10.719499+00:00",
       "attempts": [
         {
           "number": 1,
@@ -1021,24 +1021,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:27:11.840215+00:00",
+          "at": "2026-10-27T04:34:12.612664+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:27:11.844429+00:00",
+          "at": "2026-10-27T04:34:12.616494+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:11.848598+00:00"
+          "at": "2026-10-27T04:34:12.620487+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:27:11.857401+00:00"
+          "at": "2026-10-27T04:34:12.628972+00:00"
         }
       ],
       "calls": 4,
@@ -1179,7 +1179,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -1194,7 +1194,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:13.725043+00:00",
+      "updated_at": "2026-10-27T04:34:14.490588+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -1205,21 +1205,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.809,
+      "latency_seconds": 3.768,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "06c24fe6eb65afd5263b63a663d8bdcbbacc2304c3a8c95532d9d215cee0824c",
-      "completed_at": "2026-10-27T04:27:13.725024+00:00"
+      "completed_at": "2026-10-27T04:34:14.490571+00:00"
     },
     {
       "version": 1,
-      "id": "8126b5725dc24623bda04ba2342f0ace",
+      "id": "2d07dca7f2ac42e6ab1978cf577d84ef",
       "fixture": "03-contacts",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:13.728340+00:00",
+      "created_at": "2026-10-27T04:34:14.494094+00:00",
       "attempts": [
         {
           "number": 1,
@@ -1364,7 +1364,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:15.631448+00:00"
+          "at": "2026-10-27T04:34:16.428194+00:00"
         }
       ],
       "calls": 1,
@@ -1547,7 +1547,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -1562,7 +1562,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:17.512726+00:00",
+      "updated_at": "2026-10-27T04:34:18.334517+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -1573,21 +1573,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.781,
+      "latency_seconds": 3.837,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "a27d239805ac5a10c39215fcb137501c24cb7ce731a0c99440b511bc48288ac5",
-      "completed_at": "2026-10-27T04:27:17.512706+00:00"
+      "completed_at": "2026-10-27T04:34:18.334499+00:00"
     },
     {
       "version": 1,
-      "id": "3422f85a5f934800ad196338433fe064",
+      "id": "ed764e07315a4b79ac3a27b64057bc89",
       "fixture": "03-contacts",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:17.516542+00:00",
+      "created_at": "2026-10-27T04:34:18.338266+00:00",
       "attempts": [
         {
           "number": 1,
@@ -1732,24 +1732,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:27:19.417707+00:00",
+          "at": "2026-10-27T04:34:20.238605+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:27:19.421666+00:00",
+          "at": "2026-10-27T04:34:20.242190+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:19.425587+00:00"
+          "at": "2026-10-27T04:34:20.245905+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:27:19.434572+00:00"
+          "at": "2026-10-27T04:34:20.254562+00:00"
         }
       ],
       "calls": 4,
@@ -1932,7 +1932,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -1947,7 +1947,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:21.323926+00:00",
+      "updated_at": "2026-10-27T04:34:22.166295+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -1958,21 +1958,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.804,
+      "latency_seconds": 3.825,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "a27d239805ac5a10c39215fcb137501c24cb7ce731a0c99440b511bc48288ac5",
-      "completed_at": "2026-10-27T04:27:21.323909+00:00"
+      "completed_at": "2026-10-27T04:34:22.166280+00:00"
     },
     {
       "version": 1,
-      "id": "2e85883f3f67498c8591d5499d11b377",
+      "id": "41b67b634d2345a4ba4fdfea12d3dd5e",
       "fixture": "04-notice",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:21.328132+00:00",
+      "created_at": "2026-10-27T04:34:22.170042+00:00",
       "attempts": [
         {
           "number": 1,
@@ -2031,7 +2031,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:22.664986+00:00"
+          "at": "2026-10-27T04:34:23.522460+00:00"
         }
       ],
       "calls": 1,
@@ -2119,7 +2119,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -2134,7 +2134,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:23.928489+00:00",
+      "updated_at": "2026-10-27T04:34:24.884767+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -2145,21 +2145,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 2.597,
+      "latency_seconds": 2.711,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "8c9ba407bee28cf65a03e5de133d8af32ec083f3b1bf247e119e5f1537ddead4",
-      "completed_at": "2026-10-27T04:27:23.928471+00:00"
+      "completed_at": "2026-10-27T04:34:24.884743+00:00"
     },
     {
       "version": 1,
-      "id": "b93e44daa4ef44feb523173254f7dc36",
+      "id": "d9c2a2b03de14c4b9af3d84388410f84",
       "fixture": "04-notice",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:23.931799+00:00",
+      "created_at": "2026-10-27T04:34:24.888964+00:00",
       "attempts": [
         {
           "number": 1,
@@ -2218,24 +2218,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:27:25.194385+00:00",
+          "at": "2026-10-27T04:34:26.211080+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:27:25.198641+00:00",
+          "at": "2026-10-27T04:34:26.214786+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:25.203047+00:00"
+          "at": "2026-10-27T04:34:26.218361+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:27:25.213502+00:00"
+          "at": "2026-10-27T04:34:26.226385+00:00"
         }
       ],
       "calls": 4,
@@ -2323,7 +2323,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -2338,7 +2338,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:26.475850+00:00",
+      "updated_at": "2026-10-27T04:34:27.503078+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -2349,21 +2349,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 2.541,
+      "latency_seconds": 2.611,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "8c9ba407bee28cf65a03e5de133d8af32ec083f3b1bf247e119e5f1537ddead4",
-      "completed_at": "2026-10-27T04:27:26.475831+00:00"
+      "completed_at": "2026-10-27T04:34:27.503058+00:00"
     },
     {
       "version": 1,
-      "id": "89b0711e67cf42e0a31f689573e15295",
+      "id": "7f425304f4e348eab2114afb55d05970",
       "fixture": "05-shared",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:26.479321+00:00",
+      "created_at": "2026-10-27T04:34:27.507111+00:00",
       "attempts": [
         {
           "number": 1,
@@ -2428,7 +2428,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:27.805489+00:00"
+          "at": "2026-10-27T04:34:28.812145+00:00"
         }
       ],
       "calls": 1,
@@ -2536,7 +2536,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -2551,7 +2551,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:29.080913+00:00",
+      "updated_at": "2026-10-27T04:34:30.108402+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -2562,21 +2562,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 2.599,
+      "latency_seconds": 2.598,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "4c0e4f1e651ec9a050ae6cfcb137c16fe852cace0c6a071ab54d1d4e0005cc1b",
-      "completed_at": "2026-10-27T04:27:29.080895+00:00"
+      "completed_at": "2026-10-27T04:34:30.108382+00:00"
     },
     {
       "version": 1,
-      "id": "7ba94f6b7eb24894bed30ddd537abb0b",
+      "id": "0ea29ee6b464410c99108de9e7454b8d",
       "fixture": "05-shared",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:29.084482+00:00",
+      "created_at": "2026-10-27T04:34:30.112477+00:00",
       "attempts": [
         {
           "number": 1,
@@ -2641,24 +2641,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:27:30.348240+00:00",
+          "at": "2026-10-27T04:34:31.380616+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:27:30.352006+00:00",
+          "at": "2026-10-27T04:34:31.384213+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:30.355616+00:00"
+          "at": "2026-10-27T04:34:31.387718+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:27:30.363228+00:00"
+          "at": "2026-10-27T04:34:31.396987+00:00"
         }
       ],
       "calls": 4,
@@ -2766,7 +2766,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -2781,7 +2781,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:31.623778+00:00",
+      "updated_at": "2026-10-27T04:34:32.660097+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -2792,21 +2792,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 2.537,
+      "latency_seconds": 2.545,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "4c0e4f1e651ec9a050ae6cfcb137c16fe852cace0c6a071ab54d1d4e0005cc1b",
-      "completed_at": "2026-10-27T04:27:31.623762+00:00"
+      "completed_at": "2026-10-27T04:34:32.660078+00:00"
     },
     {
       "version": 1,
-      "id": "a8cb6692ea744bb992bce2599cc2cfd4",
+      "id": "dacf64f59ae94b9889acddd03c944cd1",
       "fixture": "06-listener",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:31.627492+00:00",
+      "created_at": "2026-10-27T04:34:32.664260+00:00",
       "attempts": [
         {
           "number": 1,
@@ -2900,7 +2900,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:34.712703+00:00"
+          "at": "2026-10-27T04:34:35.860409+00:00"
         }
       ],
       "calls": 1,
@@ -2991,7 +2991,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -3006,7 +3006,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:37.774090+00:00",
+      "updated_at": "2026-10-27T04:34:38.931784+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -3017,21 +3017,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 6.143,
+      "latency_seconds": 6.263,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "1df23a5fac595e923579c5c9eb57cf13e7ab5160e19582b5f088d1357fd40e1a",
-      "completed_at": "2026-10-27T04:27:37.774066+00:00"
+      "completed_at": "2026-10-27T04:34:38.931767+00:00"
     },
     {
       "version": 1,
-      "id": "aaaa94d7c2ea49fbba7df7309f2d01bd",
+      "id": "72ea38416686424591e7fc935a52d0bf",
       "fixture": "06-listener",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:37.778753+00:00",
+      "created_at": "2026-10-27T04:34:38.936240+00:00",
       "attempts": [
         {
           "number": 1,
@@ -3125,24 +3125,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:27:40.908305+00:00",
+          "at": "2026-10-27T04:34:42.041250+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:27:40.911557+00:00",
+          "at": "2026-10-27T04:34:42.044791+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:40.914831+00:00"
+          "at": "2026-10-27T04:34:42.048981+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:27:40.922348+00:00"
+          "at": "2026-10-27T04:34:42.057496+00:00"
         }
       ],
       "calls": 4,
@@ -3233,7 +3233,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -3248,7 +3248,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:43.956826+00:00",
+      "updated_at": "2026-10-27T04:34:45.064024+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -3259,21 +3259,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 6.175,
+      "latency_seconds": 6.125,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "1df23a5fac595e923579c5c9eb57cf13e7ab5160e19582b5f088d1357fd40e1a",
-      "completed_at": "2026-10-27T04:27:43.956802+00:00"
+      "completed_at": "2026-10-27T04:34:45.064003+00:00"
     },
     {
       "version": 1,
-      "id": "3afbc6a635e74367934802bcd07e7619",
+      "id": "4f37bdf2a48040d29382cd19c915a6e9",
       "fixture": "07-form-control",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "rejected",
-      "created_at": "2026-10-27T04:27:43.961669+00:00",
+      "created_at": "2026-10-27T04:34:45.069060+00:00",
       "attempts": [
         {
           "number": 1,
@@ -3424,7 +3424,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:47.697407+00:00"
+          "at": "2026-10-27T04:34:48.974994+00:00"
         }
       ],
       "calls": 1,
@@ -3572,7 +3572,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -3587,7 +3587,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:27:51.368672+00:00",
+      "updated_at": "2026-10-27T04:34:52.710461+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -3598,20 +3598,20 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 7.404,
+      "latency_seconds": 7.637,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
-      "completed_at": "2026-10-27T04:27:51.368662+00:00"
+      "completed_at": "2026-10-27T04:34:52.710454+00:00"
     },
     {
       "version": 1,
-      "id": "6fb202f115ee4ac397df57973aaac074",
+      "id": "178cd958aa5b4176be4d68374f650b81",
       "fixture": "07-form-control",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:27:51.373435+00:00",
+      "created_at": "2026-10-27T04:34:52.715863+00:00",
       "attempts": [
         {
           "number": 1,
@@ -3906,34 +3906,34 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:27:55.183067+00:00",
+          "at": "2026-10-27T04:34:56.554476+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:27:55.186982+00:00",
+          "at": "2026-10-27T04:34:56.558617+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:27:55.190742+00:00"
+          "at": "2026-10-27T04:34:56.562852+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:27:55.199474+00:00"
+          "at": "2026-10-27T04:34:56.573273+00:00"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: revise after observed verification rejection",
-          "at": "2026-10-27T04:27:58.907006+00:00"
+          "at": "2026-10-27T04:35:00.283855+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:27:58.918256+00:00"
+          "at": "2026-10-27T04:35:00.294773+00:00"
         }
       ],
       "calls": 6,
@@ -4081,7 +4081,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -4096,7 +4096,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:02.578926+00:00",
+      "updated_at": "2026-10-27T04:35:03.970408+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -4107,21 +4107,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 11.203,
+      "latency_seconds": 11.251,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "a224203c060a8c9549227f775d95206bb2a18f23ecf75c66e86ed9899411f2ec",
-      "completed_at": "2026-10-27T04:28:02.578894+00:00"
+      "completed_at": "2026-10-27T04:35:03.970392+00:00"
     },
     {
       "version": 1,
-      "id": "70983755e8f94d4cb51c545153d584d2",
+      "id": "3d96cada08bd4432bbbc262c18ac957b",
       "fixture": "08-injection",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "rejected",
-      "created_at": "2026-10-27T04:28:02.586162+00:00",
+      "created_at": "2026-10-27T04:35:03.975787+00:00",
       "attempts": [
         {
           "number": 1,
@@ -4316,7 +4316,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:06.401860+00:00"
+          "at": "2026-10-27T04:35:07.872813+00:00"
         }
       ],
       "calls": 1,
@@ -4538,7 +4538,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -4553,7 +4553,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:10.235238+00:00",
+      "updated_at": "2026-10-27T04:35:11.782478+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -4564,20 +4564,20 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 7.642,
+      "latency_seconds": 7.801,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
-      "completed_at": "2026-10-27T04:28:10.235231+00:00"
+      "completed_at": "2026-10-27T04:35:11.782471+00:00"
     },
     {
       "version": 1,
-      "id": "56d0c43c13924e78ab0daf87fdf54403",
+      "id": "2331c2b37ae54e9e9adbaa54bd2770db",
       "fixture": "08-injection",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:10.241395+00:00",
+      "created_at": "2026-10-27T04:35:11.787398+00:00",
       "attempts": [
         {
           "number": 1,
@@ -4938,34 +4938,34 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:28:14.034566+00:00",
+          "at": "2026-10-27T04:35:15.599069+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:28:14.039544+00:00",
+          "at": "2026-10-27T04:35:15.603096+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:14.044766+00:00"
+          "at": "2026-10-27T04:35:15.607062+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:28:14.054986+00:00"
+          "at": "2026-10-27T04:35:15.617314+00:00"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: revise after observed verification rejection",
-          "at": "2026-10-27T04:28:17.816406+00:00"
+          "at": "2026-10-27T04:35:19.477374+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:28:17.828446+00:00"
+          "at": "2026-10-27T04:35:19.490455+00:00"
         }
       ],
       "calls": 6,
@@ -5187,7 +5187,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -5202,7 +5202,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:21.470621+00:00",
+      "updated_at": "2026-10-27T04:35:23.314982+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -5213,21 +5213,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 11.226,
+      "latency_seconds": 11.525,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "bcb3b5fd01b39a28797bc1c00d5e099b079b35723937438f14be117b9386df38",
-      "completed_at": "2026-10-27T04:28:21.470591+00:00"
+      "completed_at": "2026-10-27T04:35:23.314959+00:00"
     },
     {
       "version": 1,
-      "id": "59fc2b4af33a4e6c8aa4ae5c75465eef",
+      "id": "95935c4ce6084107b7a37be465e092d7",
       "fixture": "09-fieldset",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:21.477483+00:00",
+      "created_at": "2026-10-27T04:35:23.322501+00:00",
       "attempts": [
         {
           "number": 1,
@@ -5345,7 +5345,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:23.578364+00:00"
+          "at": "2026-10-27T04:35:25.333856+00:00"
         }
       ],
       "calls": 1,
@@ -5492,7 +5492,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -5507,7 +5507,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:25.504297+00:00",
+      "updated_at": "2026-10-27T04:35:27.285980+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -5518,21 +5518,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 4.021,
+      "latency_seconds": 3.958,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "254924871fba0dec49045988314c9ef35b7425cd2e944c3c12f27d25119e923e",
-      "completed_at": "2026-10-27T04:28:25.504277+00:00"
+      "completed_at": "2026-10-27T04:35:27.285961+00:00"
     },
     {
       "version": 1,
-      "id": "a12841de768a457993a809d723ca6e73",
+      "id": "683c83393c0a4803a9c2fa766df1824b",
       "fixture": "09-fieldset",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:25.510382+00:00",
+      "created_at": "2026-10-27T04:35:27.292880+00:00",
       "attempts": [
         {
           "number": 1,
@@ -5650,24 +5650,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:28:27.431954+00:00",
+          "at": "2026-10-27T04:35:29.313397+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:28:27.436269+00:00",
+          "at": "2026-10-27T04:35:29.317126+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:27.440355+00:00"
+          "at": "2026-10-27T04:35:29.320944+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:28:27.450011+00:00"
+          "at": "2026-10-27T04:35:29.330018+00:00"
         }
       ],
       "calls": 4,
@@ -5814,7 +5814,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -5829,7 +5829,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:29.394643+00:00",
+      "updated_at": "2026-10-27T04:35:31.349315+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -5840,21 +5840,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.881,
+      "latency_seconds": 4.053,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "254924871fba0dec49045988314c9ef35b7425cd2e944c3c12f27d25119e923e",
-      "completed_at": "2026-10-27T04:28:29.394617+00:00"
+      "completed_at": "2026-10-27T04:35:31.349297+00:00"
     },
     {
       "version": 1,
-      "id": "7eab95679dd54fa380af6931be8143f2",
+      "id": "0a28aa7f1c11417586dbb7126a905e0b",
       "fixture": "10-ledger",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:29.401341+00:00",
+      "created_at": "2026-10-27T04:35:31.355907+00:00",
       "attempts": [
         {
           "number": 1,
@@ -5925,7 +5925,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:30.734242+00:00"
+          "at": "2026-10-27T04:35:32.653073+00:00"
         }
       ],
       "calls": 1,
@@ -6025,7 +6025,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -6040,7 +6040,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:32.032414+00:00",
+      "updated_at": "2026-10-27T04:35:33.922054+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -6051,21 +6051,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 2.627,
+      "latency_seconds": 2.563,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "9b3757b2941d247228125809f38d435ec0dc88a95d3b0fd59b6896d519e0655d",
-      "completed_at": "2026-10-27T04:28:32.032398+00:00"
+      "completed_at": "2026-10-27T04:35:33.922034+00:00"
     },
     {
       "version": 1,
-      "id": "2ca071b3652f45379d4f88d45e0968ba",
+      "id": "b0aafa4c01b24868be4a3e318b57300f",
       "fixture": "10-ledger",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:32.038049+00:00",
+      "created_at": "2026-10-27T04:35:33.927770+00:00",
       "attempts": [
         {
           "number": 1,
@@ -6136,24 +6136,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:28:33.327762+00:00",
+          "at": "2026-10-27T04:35:35.216369+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:28:33.331152+00:00",
+          "at": "2026-10-27T04:35:35.219858+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:33.334269+00:00"
+          "at": "2026-10-27T04:35:35.223180+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:28:33.343952+00:00"
+          "at": "2026-10-27T04:35:35.231459+00:00"
         }
       ],
       "calls": 4,
@@ -6253,7 +6253,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -6268,7 +6268,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:34.655909+00:00",
+      "updated_at": "2026-10-27T04:35:36.540301+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -6279,21 +6279,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 2.615,
+      "latency_seconds": 2.61,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "9b3757b2941d247228125809f38d435ec0dc88a95d3b0fd59b6896d519e0655d",
-      "completed_at": "2026-10-27T04:28:34.655891+00:00"
+      "completed_at": "2026-10-27T04:35:36.540282+00:00"
     },
     {
       "version": 1,
-      "id": "41a8ab57928b4010967baae134cbe915",
+      "id": "1c1384cca2d6405382c0ad1d64ded134",
       "fixture": "11-form-action",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:34.662032+00:00",
+      "created_at": "2026-10-27T04:35:36.546517+00:00",
       "attempts": [
         {
           "number": 1,
@@ -6444,7 +6444,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:38.418238+00:00"
+          "at": "2026-10-27T04:35:40.281194+00:00"
         }
       ],
       "calls": 1,
@@ -6592,7 +6592,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -6607,7 +6607,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:42.085856+00:00",
+      "updated_at": "2026-10-27T04:35:43.938332+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -6618,21 +6618,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 7.42,
+      "latency_seconds": 7.388,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "6a36fecb0e0987f53666e48b1d8c3a3caa4059c55aa8fa2e56a494ebad2347b9",
-      "completed_at": "2026-10-27T04:28:42.085838+00:00"
+      "completed_at": "2026-10-27T04:35:43.938311+00:00"
     },
     {
       "version": 1,
-      "id": "80e18a0f06694d3086bc5c6bca714c95",
+      "id": "198ac9d65d3c47b2ab3abcd7727ba346",
       "fixture": "11-form-action",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:42.092353+00:00",
+      "created_at": "2026-10-27T04:35:43.945773+00:00",
       "attempts": [
         {
           "number": 1,
@@ -6783,24 +6783,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:28:45.870414+00:00",
+          "at": "2026-10-27T04:35:47.715123+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:28:45.875450+00:00",
+          "at": "2026-10-27T04:35:47.718994+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:45.879962+00:00"
+          "at": "2026-10-27T04:35:47.722818+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:28:45.889126+00:00"
+          "at": "2026-10-27T04:35:47.732077+00:00"
         }
       ],
       "calls": 4,
@@ -6948,7 +6948,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -6963,7 +6963,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:49.535962+00:00",
+      "updated_at": "2026-10-27T04:35:51.407148+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -6974,21 +6974,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 7.44,
+      "latency_seconds": 7.458,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "6a36fecb0e0987f53666e48b1d8c3a3caa4059c55aa8fa2e56a494ebad2347b9",
-      "completed_at": "2026-10-27T04:28:49.535943+00:00"
+      "completed_at": "2026-10-27T04:35:51.407127+00:00"
     },
     {
       "version": 1,
-      "id": "84bfdf58448f42bcadb1f260271be828",
+      "id": "88e54dee0ba744759b1dced636b12d8a",
       "fixture": "12-booking",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:49.544334+00:00",
+      "created_at": "2026-10-27T04:35:51.414840+00:00",
       "attempts": [
         {
           "number": 1,
@@ -7155,7 +7155,7 @@
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:28:53.301707+00:00"
+          "at": "2026-10-27T04:35:55.187989+00:00"
         }
       ],
       "calls": 1,
@@ -7371,7 +7371,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -7386,7 +7386,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:28:56.989120+00:00",
+      "updated_at": "2026-10-27T04:35:58.903828+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -7397,21 +7397,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 7.441,
+      "latency_seconds": 7.485,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "84ea00fa50e5b38e776271eac6bd422640f8decb005e7bbe431ca0ad58f56352",
-      "completed_at": "2026-10-27T04:28:56.989088+00:00"
+      "completed_at": "2026-10-27T04:35:58.903802+00:00"
     },
     {
       "version": 1,
-      "id": "a07a92527c3e43ceaec2299835e37d60",
+      "id": "8cf7bc2edb0d47f2a9a38812a824d7a1",
       "fixture": "12-booking",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "accepted",
-      "created_at": "2026-10-27T04:28:56.997784+00:00",
+      "created_at": "2026-10-27T04:35:58.912299+00:00",
       "attempts": [
         {
           "number": 1,
@@ -7578,24 +7578,24 @@
         {
           "tool": "inspect_page",
           "decision": "Scripted: inspect the observed page",
-          "at": "2026-10-27T04:29:00.765753+00:00",
+          "at": "2026-10-27T04:36:02.691264+00:00",
           "observation": "Original browser inspection returned"
         },
         {
           "tool": "read_source",
           "decision": "Scripted: read pristine editable files",
-          "at": "2026-10-27T04:29:00.769586+00:00",
+          "at": "2026-10-27T04:36:02.696071+00:00",
           "observation": "Pristine HTML/CSS and SHA-256 returned"
         },
         {
           "tool": "propose_patch",
           "decision": "Scripted: propose a bundled demonstration patch",
-          "at": "2026-10-27T04:29:00.774053+00:00"
+          "at": "2026-10-27T04:36:02.700959+00:00"
         },
         {
           "tool": "verify_candidate",
           "decision": "Scripted: test the pending candidate",
-          "at": "2026-10-27T04:29:00.784628+00:00"
+          "at": "2026-10-27T04:36:02.712216+00:00"
         }
       ],
       "calls": 4,
@@ -7811,7 +7811,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -7826,7 +7826,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:04.489700+00:00",
+      "updated_at": "2026-10-27T04:36:06.387801+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -7837,21 +7837,21 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 7.489,
+      "latency_seconds": 7.472,
       "provider_model": "scripted-v1 (not generative AI)",
       "pending": null,
       "accepted_hash": "84ea00fa50e5b38e776271eac6bd422640f8decb005e7bbe431ca0ad58f56352",
-      "completed_at": "2026-10-27T04:29:04.489663+00:00"
+      "completed_at": "2026-10-27T04:36:06.387783+00:00"
     },
     {
       "version": 1,
-      "id": "c98ede0352f644deb57ac73eea507491",
+      "id": "537bf6969dcf4bd7ad812114abf7c948",
       "fixture": "13-correct-form",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "noop",
-      "created_at": "2026-10-27T04:29:04.499071+00:00",
+      "created_at": "2026-10-27T04:36:06.396568+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -7960,7 +7960,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -7975,7 +7975,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:06.429269+00:00",
+      "updated_at": "2026-10-27T04:36:08.302662+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -7986,19 +7986,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 1.92,
+      "latency_seconds": 1.902,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:06.429262+00:00"
+      "completed_at": "2026-10-27T04:36:08.302656+00:00"
     },
     {
       "version": 1,
-      "id": "5f6d18ffe26a411cbddc78035225a839",
+      "id": "e00a4da70d33474492d97ab701c70d62",
       "fixture": "13-correct-form",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "noop",
-      "created_at": "2026-10-27T04:29:06.435813+00:00",
+      "created_at": "2026-10-27T04:36:08.309866+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -8107,7 +8107,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -8122,7 +8122,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:08.399513+00:00",
+      "updated_at": "2026-10-27T04:36:10.217696+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -8133,19 +8133,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 1.96,
+      "latency_seconds": 1.905,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:08.399502+00:00"
+      "completed_at": "2026-10-27T04:36:10.217688+00:00"
     },
     {
       "version": 1,
-      "id": "48575e33085246b189c2473c65cb7b60",
+      "id": "2011c7d9a97749499ad99645910398b9",
       "fixture": "14-correct-action",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "noop",
-      "created_at": "2026-10-27T04:29:08.406628+00:00",
+      "created_at": "2026-10-27T04:36:10.224781+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -8236,7 +8236,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -8251,7 +8251,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:11.463048+00:00",
+      "updated_at": "2026-10-27T04:36:13.245256+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -8262,19 +8262,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.05,
+      "latency_seconds": 3.017,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:11.463039+00:00"
+      "completed_at": "2026-10-27T04:36:13.245248+00:00"
     },
     {
       "version": 1,
-      "id": "15052697013d457faa265c44d336941e",
+      "id": "476db9e1b89640e18a786748bbe2ef54",
       "fixture": "14-correct-action",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "noop",
-      "created_at": "2026-10-27T04:29:11.470169+00:00",
+      "created_at": "2026-10-27T04:36:13.251687+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -8365,7 +8365,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -8380,7 +8380,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:14.608810+00:00",
+      "updated_at": "2026-10-27T04:36:16.290443+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -8391,19 +8391,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.135,
+      "latency_seconds": 3.036,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:14.608805+00:00"
+      "completed_at": "2026-10-27T04:36:16.290436+00:00"
     },
     {
       "version": 1,
-      "id": "e997840cf29f4fcf963fa56f931c60eb",
+      "id": "d1d66c4665bf4d8396b5fad8915fdc5c",
       "fixture": "15-confirmation",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "noop",
-      "created_at": "2026-10-27T04:29:14.615457+00:00",
+      "created_at": "2026-10-27T04:36:16.297349+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -8465,7 +8465,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -8480,7 +8480,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:15.940523+00:00",
+      "updated_at": "2026-10-27T04:36:17.617634+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -8491,19 +8491,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 1.321,
+      "latency_seconds": 1.317,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:15.940513+00:00"
+      "completed_at": "2026-10-27T04:36:17.617627+00:00"
     },
     {
       "version": 1,
-      "id": "563f2b26784a4d118fe27a519f7ad0b4",
+      "id": "1c5f30e7202f4351af617ce243a4e515",
       "fixture": "15-confirmation",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "noop",
-      "created_at": "2026-10-27T04:29:15.947289+00:00",
+      "created_at": "2026-10-27T04:36:17.623744+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -8565,7 +8565,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -8580,7 +8580,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:17.244216+00:00",
+      "updated_at": "2026-10-27T04:36:18.896842+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -8591,19 +8591,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 1.294,
+      "latency_seconds": 1.271,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:17.244208+00:00"
+      "completed_at": "2026-10-27T04:36:18.896834+00:00"
     },
     {
       "version": 1,
-      "id": "b295b0f5d52345f3b8899a5ada27a722",
+      "id": "e32d0e1e29d9445b8145397529428609",
       "fixture": "16-ambiguous",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "unsupported",
-      "created_at": "2026-10-27T04:29:17.250642+00:00",
+      "created_at": "2026-10-27T04:36:18.903394+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -8772,7 +8772,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -8787,7 +8787,214 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:19.226862+00:00",
+      "updated_at": "2026-10-27T04:36:20.797923+00:00",
+      "limits": {
+        "attempts": 3,
+        "calls": 12,
+        "output_tokens": 2200,
+        "seconds": 180,
+        "input_bytes": 24000,
+        "spend_usd": 0.3,
+        "input_rate": 0.25,
+        "output_rate": 0.5
+      },
+      "latency_seconds": 1.891,
+      "pending": null,
+      "completed_at": "2026-10-27T04:36:20.797917+00:00"
+    },
+    {
+      "version": 1,
+      "id": "4811369983fd461b87581afbbfd5a08e",
+      "fixture": "16-ambiguous",
+      "mode": "scripted",
+      "approach": "agent",
+      "model": "scripted-v1 (not generative AI)",
+      "status": "unsupported",
+      "created_at": "2026-10-27T04:36:20.804528+00:00",
+      "attempts": [],
+      "trace": [],
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "estimated_usd": 0.0,
+      "reserved_usd": 0.0,
+      "accepted_path": null,
+      "baseline": {
+        "version": 1,
+        "axe": {
+          "violations": [
+            {
+              "id": "label",
+              "impact": "critical",
+              "description": "Ensure every form element has a label",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=playwright",
+              "nodes": [
+                {
+                  "target": [
+                    "#one"
+                  ],
+                  "html": "<input id=\"one\" name=\"one\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                  "target": [
+                    "#two"
+                  ],
+                  "html": "<input id=\"two\" name=\"two\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ]
+            }
+          ],
+          "incomplete": [],
+          "targeted": [
+            {
+              "id": "label",
+              "impact": "critical",
+              "description": "Ensure every form element has a label",
+              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=playwright",
+              "nodes": [
+                {
+                  "target": [
+                    "#one"
+                  ],
+                  "html": "<input id=\"one\" name=\"one\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                  "target": [
+                    "#two"
+                  ],
+                  "html": "<input id=\"two\" name=\"two\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ]
+            }
+          ],
+          "targetedIncomplete": []
+        },
+        "controls": [
+          {
+            "id": "one",
+            "tag": "input",
+            "name": "one",
+            "type": null,
+            "text": "",
+            "nearby": "Contact details",
+            "labelSupported": false,
+            "visible": true,
+            "disabled": false,
+            "box": {
+              "x": 247,
+              "y": 214.734375,
+              "width": 606,
+              "height": 48.34375
+            }
+          },
+          {
+            "id": "two",
+            "tag": "input",
+            "name": "two",
+            "type": null,
+            "text": "",
+            "nearby": "",
+            "labelSupported": false,
+            "visible": true,
+            "disabled": false,
+            "box": {
+              "x": 247,
+              "y": 269.078125,
+              "width": 606,
+              "height": 48.34375
+            }
+          },
+          {
+            "id": "submit",
+            "tag": "button",
+            "name": null,
+            "type": "submit",
+            "text": "Save request",
+            "nearby": "Contact details",
+            "labelSupported": false,
+            "visible": true,
+            "disabled": false,
+            "box": {
+              "x": 247,
+              "y": 337.421875,
+              "width": 137,
+              "height": 48.34375
+            }
+          }
+        ],
+        "text": [
+          {
+            "text": "Contact details",
+            "color": "rgb(23, 43, 54)",
+            "background": "rgb(255, 255, 255)",
+            "visible": true
+          },
+          {
+            "text": "Contact details",
+            "color": "rgb(23, 43, 54)",
+            "background": "rgb(255, 255, 255)",
+            "visible": true
+          },
+          {
+            "text": "Save request",
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(23, 76, 70)",
+            "visible": true
+          },
+          {
+            "text": "Ready",
+            "color": "rgb(23, 43, 54)",
+            "background": "rgb(255, 255, 255)",
+            "visible": true
+          }
+        ],
+        "unsupported": [
+          "Ambiguous label for #one",
+          "Ambiguous label for #two"
+        ],
+        "labels": [],
+        "behavior": [
+          {
+            "id": "form:payload",
+            "pass": true,
+            "observation": "Passed"
+          }
+        ],
+        "keyboard": [],
+        "blocked": [],
+        "browser": "156.0.8078.4"
+      },
+      "reason": "Ambiguous label for #one; Ambiguous label for #two",
+      "fixture_hashes": {
+        "contract.json": "a2c5f3c728703db5902f326335bb3f484ec8f9c0d5f52e0ca1d361709f85331b",
+        "index.html": "e3ecc5e70760484c5cfdf5bf8ec1c5bf8eb51e1aef395dd9635b7b0439a27e30",
+        "style.css": "595c08ddfc65d1dc639944577f5f1b6125c52744592c9f7e86d55a7f28ad0fe9",
+        "trusted.js": "7e71f3457282a34b154e164a48ba533bc28fa028cd1b953679741bb6c30b09cb"
+      },
+      "locks": {
+        "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
+        "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
+      },
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
+      "implementation_hashes": {
+        "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
+        "src/repair_agent/app.py": "4d133bbeec652631283b797231bdae431161a49bb4ff2e1c4552361a3633e70f",
+        "src/repair_agent/browser.py": "93a208fa7ba3d866d9c076c62641a4e5e2036c673c4919757b4e5b37ccaf2a52",
+        "src/repair_agent/cli.py": "6b3bbe39a3be040fa439fc7370c23249b4ef07d197ec386b7845247b5f18043d",
+        "src/repair_agent/fixtures.py": "aef086913c1e88518c2b2d6e61af6af11f73171e7eb729d2c85fc660e6656fac",
+        "src/repair_agent/model.py": "b06062c0a00fff7ec7e8da66b796be4e1c1c7754c448eaf97caa2b6ec25b61ca",
+        "src/repair_agent/patching.py": "25d3a1713d1bc0db542d5e0626288f8f38740220c42c26d65e7f689eaaa95f06",
+        "src/repair_agent/schema.py": "bc1bd260607912042da7cfc6e0dbd879f4006f0875cff9e6bafd25dfe663c6da",
+        "src/repair_agent/store.py": "958637d00d00a1928e20c914c76f09deb6aa3c940950b258afa3f2b04cbc4c6b",
+        "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
+      },
+      "python": "3.12.13",
+      "updated_at": "2026-10-27T04:36:22.780741+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -8800,224 +9007,17 @@
       },
       "latency_seconds": 1.973,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:19.226856+00:00"
+      "completed_at": "2026-10-27T04:36:22.780736+00:00"
     },
     {
       "version": 1,
-      "id": "5f5afe1d53ce4474bdb8d989f6b4183a",
-      "fixture": "16-ambiguous",
-      "mode": "scripted",
-      "approach": "agent",
-      "model": "scripted-v1 (not generative AI)",
-      "status": "unsupported",
-      "created_at": "2026-10-27T04:29:19.234277+00:00",
-      "attempts": [],
-      "trace": [],
-      "calls": 0,
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "estimated_usd": 0.0,
-      "reserved_usd": 0.0,
-      "accepted_path": null,
-      "baseline": {
-        "version": 1,
-        "axe": {
-          "violations": [
-            {
-              "id": "label",
-              "impact": "critical",
-              "description": "Ensure every form element has a label",
-              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=playwright",
-              "nodes": [
-                {
-                  "target": [
-                    "#one"
-                  ],
-                  "html": "<input id=\"one\" name=\"one\">",
-                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-                },
-                {
-                  "target": [
-                    "#two"
-                  ],
-                  "html": "<input id=\"two\" name=\"two\">",
-                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-                }
-              ]
-            }
-          ],
-          "incomplete": [],
-          "targeted": [
-            {
-              "id": "label",
-              "impact": "critical",
-              "description": "Ensure every form element has a label",
-              "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=playwright",
-              "nodes": [
-                {
-                  "target": [
-                    "#one"
-                  ],
-                  "html": "<input id=\"one\" name=\"one\">",
-                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-                },
-                {
-                  "target": [
-                    "#two"
-                  ],
-                  "html": "<input id=\"two\" name=\"two\">",
-                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-                }
-              ]
-            }
-          ],
-          "targetedIncomplete": []
-        },
-        "controls": [
-          {
-            "id": "one",
-            "tag": "input",
-            "name": "one",
-            "type": null,
-            "text": "",
-            "nearby": "Contact details",
-            "labelSupported": false,
-            "visible": true,
-            "disabled": false,
-            "box": {
-              "x": 247,
-              "y": 214.734375,
-              "width": 606,
-              "height": 48.34375
-            }
-          },
-          {
-            "id": "two",
-            "tag": "input",
-            "name": "two",
-            "type": null,
-            "text": "",
-            "nearby": "",
-            "labelSupported": false,
-            "visible": true,
-            "disabled": false,
-            "box": {
-              "x": 247,
-              "y": 269.078125,
-              "width": 606,
-              "height": 48.34375
-            }
-          },
-          {
-            "id": "submit",
-            "tag": "button",
-            "name": null,
-            "type": "submit",
-            "text": "Save request",
-            "nearby": "Contact details",
-            "labelSupported": false,
-            "visible": true,
-            "disabled": false,
-            "box": {
-              "x": 247,
-              "y": 337.421875,
-              "width": 137,
-              "height": 48.34375
-            }
-          }
-        ],
-        "text": [
-          {
-            "text": "Contact details",
-            "color": "rgb(23, 43, 54)",
-            "background": "rgb(255, 255, 255)",
-            "visible": true
-          },
-          {
-            "text": "Contact details",
-            "color": "rgb(23, 43, 54)",
-            "background": "rgb(255, 255, 255)",
-            "visible": true
-          },
-          {
-            "text": "Save request",
-            "color": "rgb(255, 255, 255)",
-            "background": "rgb(23, 76, 70)",
-            "visible": true
-          },
-          {
-            "text": "Ready",
-            "color": "rgb(23, 43, 54)",
-            "background": "rgb(255, 255, 255)",
-            "visible": true
-          }
-        ],
-        "unsupported": [
-          "Ambiguous label for #one",
-          "Ambiguous label for #two"
-        ],
-        "labels": [],
-        "behavior": [
-          {
-            "id": "form:payload",
-            "pass": true,
-            "observation": "Passed"
-          }
-        ],
-        "keyboard": [],
-        "blocked": [],
-        "browser": "156.0.8078.4"
-      },
-      "reason": "Ambiguous label for #one; Ambiguous label for #two",
-      "fixture_hashes": {
-        "contract.json": "a2c5f3c728703db5902f326335bb3f484ec8f9c0d5f52e0ca1d361709f85331b",
-        "index.html": "e3ecc5e70760484c5cfdf5bf8ec1c5bf8eb51e1aef395dd9635b7b0439a27e30",
-        "style.css": "595c08ddfc65d1dc639944577f5f1b6125c52744592c9f7e86d55a7f28ad0fe9",
-        "trusted.js": "7e71f3457282a34b154e164a48ba533bc28fa028cd1b953679741bb6c30b09cb"
-      },
-      "locks": {
-        "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
-        "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
-      },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
-      "implementation_hashes": {
-        "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
-        "src/repair_agent/app.py": "4d133bbeec652631283b797231bdae431161a49bb4ff2e1c4552361a3633e70f",
-        "src/repair_agent/browser.py": "93a208fa7ba3d866d9c076c62641a4e5e2036c673c4919757b4e5b37ccaf2a52",
-        "src/repair_agent/cli.py": "6b3bbe39a3be040fa439fc7370c23249b4ef07d197ec386b7845247b5f18043d",
-        "src/repair_agent/fixtures.py": "aef086913c1e88518c2b2d6e61af6af11f73171e7eb729d2c85fc660e6656fac",
-        "src/repair_agent/model.py": "b06062c0a00fff7ec7e8da66b796be4e1c1c7754c448eaf97caa2b6ec25b61ca",
-        "src/repair_agent/patching.py": "25d3a1713d1bc0db542d5e0626288f8f38740220c42c26d65e7f689eaaa95f06",
-        "src/repair_agent/schema.py": "bc1bd260607912042da7cfc6e0dbd879f4006f0875cff9e6bafd25dfe663c6da",
-        "src/repair_agent/store.py": "958637d00d00a1928e20c914c76f09deb6aa3c940950b258afa3f2b04cbc4c6b",
-        "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
-      },
-      "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:21.302142+00:00",
-      "limits": {
-        "attempts": 3,
-        "calls": 12,
-        "output_tokens": 2200,
-        "seconds": 180,
-        "input_bytes": 24000,
-        "spend_usd": 0.3,
-        "input_rate": 0.25,
-        "output_rate": 0.5
-      },
-      "latency_seconds": 2.065,
-      "pending": null,
-      "completed_at": "2026-10-27T04:29:21.302133+00:00"
-    },
-    {
-      "version": 1,
-      "id": "738e8de9b47e4491b79ae0c24b8f437e",
+      "id": "24e169230acf4bceac12b9e830736494",
       "fixture": "17-gradient",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "unsupported",
-      "created_at": "2026-10-27T04:29:21.309526+00:00",
+      "created_at": "2026-10-27T04:36:22.788999+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -9107,7 +9107,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -9122,7 +9122,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:22.694646+00:00",
+      "updated_at": "2026-10-27T04:36:24.116183+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -9133,19 +9133,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 1.382,
+      "latency_seconds": 1.323,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:22.694632+00:00"
+      "completed_at": "2026-10-27T04:36:24.116178+00:00"
     },
     {
       "version": 1,
-      "id": "18fc3912ccfa497eaacb32999b53c275",
+      "id": "4f415ae2a464412486c78631dda185b4",
       "fixture": "17-gradient",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "unsupported",
-      "created_at": "2026-10-27T04:29:22.702072+00:00",
+      "created_at": "2026-10-27T04:36:24.123164+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -9235,7 +9235,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -9250,7 +9250,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:23.995234+00:00",
+      "updated_at": "2026-10-27T04:36:25.435082+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -9261,19 +9261,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 1.29,
+      "latency_seconds": 1.309,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:23.995224+00:00"
+      "completed_at": "2026-10-27T04:36:25.435077+00:00"
     },
     {
       "version": 1,
-      "id": "f403379da98c4799b857f2bb50b11696",
+      "id": "37d354523c0140debe8c5bf30d533dee",
       "fixture": "18-complex",
       "mode": "scripted",
       "approach": "single-shot",
       "model": "scripted-v1 (not generative AI)",
       "status": "unsupported",
-      "created_at": "2026-10-27T04:29:24.002748+00:00",
+      "created_at": "2026-10-27T04:36:25.441662+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -9366,7 +9366,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -9381,7 +9381,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:27.126745+00:00",
+      "updated_at": "2026-10-27T04:36:28.588900+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -9392,19 +9392,19 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.119,
+      "latency_seconds": 3.144,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:27.126732+00:00"
+      "completed_at": "2026-10-27T04:36:28.588894+00:00"
     },
     {
       "version": 1,
-      "id": "366db7d8498448978e39b357a729956e",
+      "id": "472364e5637549aa9b844f057e24641e",
       "fixture": "18-complex",
       "mode": "scripted",
       "approach": "agent",
       "model": "scripted-v1 (not generative AI)",
       "status": "unsupported",
-      "created_at": "2026-10-27T04:29:27.135098+00:00",
+      "created_at": "2026-10-27T04:36:28.595560+00:00",
       "attempts": [],
       "trace": [],
       "calls": 0,
@@ -9497,7 +9497,7 @@
         "uv.lock": "114bf03d8b28601b4598d9bca2668faac7afa369e39df0c76d6f34e7fc58a63c",
         "package-lock.json": "61f8853fe3115a1840b664fc71489e699bce77a7a0b408284c8dd179a897b565"
       },
-      "oracle_hash": "a19f24df72473fbac33a8986c5ceb203fe3fef14912a599ae9fd57e136ff3676",
+      "oracle_hash": "a2e65b1d2425910493bc43e1cff868771870c21a3034a05675d006439246b53e",
       "implementation_hashes": {
         "src/repair_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "src/repair_agent/agent.py": "955838a1aed0d64570a38ee42814e6bdee84025150a1e8b444a5c03c60c572a0",
@@ -9512,7 +9512,7 @@
         "src/repair_agent/verification.py": "bbcb131891e3d697a824fd573ea0c1af85b609b39660315a7259acfe2000b54d"
       },
       "python": "3.12.13",
-      "updated_at": "2026-10-27T04:29:30.274155+00:00",
+      "updated_at": "2026-10-27T04:36:31.735512+00:00",
       "limits": {
         "attempts": 3,
         "calls": 12,
@@ -9523,9 +9523,9 @@
         "input_rate": 0.25,
         "output_rate": 0.5
       },
-      "latency_seconds": 3.134,
+      "latency_seconds": 3.137,
       "pending": null,
-      "completed_at": "2026-10-27T04:29:30.274144+00:00"
+      "completed_at": "2026-10-27T04:36:31.735503+00:00"
     }
   ],
   "summary": [
@@ -9542,8 +9542,8 @@
       "correct_abstentions": 2,
       "unsupported_pages": 2,
       "attempts": 8,
-      "latency_seconds": 46.481,
-      "median_latency_seconds": 3.415,
+      "latency_seconds": 46.533,
+      "median_latency_seconds": 3.385,
       "input_tokens": 0,
       "output_tokens": 0,
       "estimated_usd": 0.0
@@ -9561,8 +9561,8 @@
       "correct_abstentions": 2,
       "unsupported_pages": 2,
       "attempts": 10,
-      "latency_seconds": 53.558,
-      "median_latency_seconds": 3.47,
+      "latency_seconds": 53.685,
+      "median_latency_seconds": 3.402,
       "input_tokens": 0,
       "output_tokens": 0,
       "estimated_usd": 0.0
@@ -9580,8 +9580,8 @@
       "correct_abstentions": 1,
       "unsupported_pages": 1,
       "attempts": 4,
-      "latency_seconds": 25.949,
-      "median_latency_seconds": 3.57,
+      "latency_seconds": 25.855,
+      "median_latency_seconds": 3.551,
       "input_tokens": 0,
       "output_tokens": 0,
       "estimated_usd": 0.0
@@ -9599,8 +9599,8 @@
       "correct_abstentions": 1,
       "unsupported_pages": 1,
       "attempts": 4,
-      "latency_seconds": 25.853,
-      "median_latency_seconds": 3.507,
+      "latency_seconds": 26.001,
+      "median_latency_seconds": 3.595,
       "input_tokens": 0,
       "output_tokens": 0,
       "estimated_usd": 0.0
